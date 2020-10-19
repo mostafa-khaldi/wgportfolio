@@ -1,0 +1,464 @@
+@font-face {
+    font-family: 'Helvetica Light';
+    font-weight: 100;
+    src: url(./fonts/Helvetica-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Helvetica Bold';
+    font-weight: 400;
+    src: url(./fonts/Helvetica-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Bentosa';
+    font-weight: 100;
+    src: url(./fonts/Bentosa.ttf);
+}
+
+body {
+    font-family: 'Helvetica Light';
+    color: black;
+    margin: 0;
+}
+
+p, h5 {
+    font-family: 'Helvetica Light';
+    font-weight: 100;
+    font-size: 1.7em;
+    margin: 0;
+}
+
+h5 {
+    color: #a67c52;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Helvetica Bold';
+    font-weight: 400;
+    font-size: 8em;
+    margin: 0;
+}
+
+.toggle, #menu-mobile {
+    display: none;
+}
+
+/*          nav         */
+
+#nav {
+    position: sticky;
+    top: 0;
+    backdrop-filter: saturate(180%) grayscale(1) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) grayscale(1) blur(20px);
+    z-index: 3;
+}
+
+nav {
+    width: 70%;
+    height: 3em;
+    padding: 1em 0 1em;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav div:first-child {
+    flex-basis: 10%;
+    justify-content: flex-start;
+}
+
+nav div:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-basis: 90%;
+}
+
+nav div:nth-child(2) div:first-child {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 85%;
+}
+
+nav div:nth-child(2) div:nth-child(2) {
+    flex-basis: 15%;
+}
+
+nav div:first-child img {
+    width: 5em;
+    transition: 0.2 ease-in-out;
+    -webkit-transition: 0.2 ease-in-out;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    display: inline;
+    list-style: none;
+    margin: 0 1.7em;
+    font-size: 1.1em;
+}
+
+nav div:nth-child(2) div:nth-child(2) a {
+    margin: 0 1em;
+}
+
+nav div:nth-child(2) div:nth-child(2) a img {
+    width: 1.3em;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/*          header          */
+
+header {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10em auto 0em;
+}
+
+header div p span {
+    font-family: 'Bentosa';
+    font-size: 2em;
+    color: #a67c52;
+}
+
+header div:first-child {
+    flex-basis: 60%;
+    transform: translateX(2em);
+    -webkit-transform: translateX(2em);
+    z-index: 1;
+}
+
+header div:nth-child(2) {
+    flex-basis: 40%;
+    transform: translateX(-2em);
+    -webkit-transform: translateX(-2em);
+    z-index: 0;
+}
+
+header div img {
+    width: 36em;
+}
+
+header div:first-child div {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div:first-child div button {
+    padding: 1em 1.7em;
+    margin: 0 1em;
+}
+
+header div:first-child div button a {
+    text-decoration: none;
+    font-family: 'Helvetica Light';
+    font-size: 1.7em;
+    color: white;
+}
+
+header div:first-child div button:first-child {
+    background-color: #a67c52;
+    border: 0;
+    border-radius: .6em;
+}
+
+header div:first-child div button:nth-child(2) {
+    background-color: black;
+    border: 0;
+    border-radius: .6em;
+}
+
+/*              about               */
+
+.about {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10em 0;
+}
+
+.about div {
+    flex: 1;
+}
+
+.about div p {
+    line-height: 1.4em;
+}
+
+.about div img {
+    width: 36em;
+    margin-right: 2em;
+}
+
+/*              portfolio               */
+
+.portfolio {
+    background-color: #f1eeed;
+    margin: 0 auto;
+    padding: 5em 0;
+}
+
+.portfolio-container {
+    width: 70%;
+    margin: auto;
+}
+
+.portfolio div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.portfolio div div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills-set {
+    margin-top: 2em;
+}
+
+.skills-set div p {
+    margin: .4em 0;
+}
+
+.portfolio div div:nth-child(2) div {
+    flex-basis: 50%;
+}
+
+.portfolio div div:nth-child(2) div:first-child {
+    display: flex;
+    text-align: end;
+}
+
+.portfolio div div:nth-child(2) div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 0.15em;
+    border-radius: 2em;
+    background: #b3b3b3;
+    width: 60%;
+    margin-left: 2em;
+    box-shadow: inset 0 0 5px #b3b3b3;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: .6em;
+    width: .6em;
+    border-radius: 50%;
+    background: #a67c52;
+}
+
+input[type=range]::-moz-range-thumb {
+    -moz-appearance: none;
+    height: .6em;
+    width: .6em;
+    border-radius: 50%;
+    background: #a67c52;
+}
+
+/*              experience              */
+
+.experience {
+    width: 80%;
+    margin: auto;
+    padding: 10em 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.experience-title {
+    margin-bottom: 2em;
+}
+
+.timeline div p {
+    position: relative;
+    font-size: 1em;
+    padding: 1.3em;
+    margin: 0 2em 2em;
+    color: #a67c52;
+    border: .1em solid #a67c52;
+    background-color: transparent;
+    border-radius: 1em;
+    line-height: 1.4em;
+    transition: 0.4s ease-in-out;
+    z-index: 1;
+}
+
+.timeline div p:hover {
+    transform: translateY(-.5em);
+    -webkit-transform: translateY(-.5em);
+    box-shadow: 0em .5em 1.6em .1em rgba(0, 0, 0, 0.156);
+}
+
+.timeline .left {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.timeline .right {
+    margin-bottom: 0;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.timeline::after {
+    content: '';
+    width: 1px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    background-color: #a67c52;
+    z-index: 0;
+}
+
+.timeline .right p {
+    margin-bottom: 0;
+    left: 100%;
+}
+
+.timeline .left p::after {
+    content: '';
+    position: absolute;
+    top: 2em;
+    right: -2.7em;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: white;
+    border: .1em solid #a67c52;
+}
+
+.timeline .right p::before {
+    content: '';
+    position: absolute;
+    bottom: 2em;
+    left: -2.7em;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: white;
+    border: .1em solid #a67c52;
+}
+
+.timeline div p span {
+    font-family: 'Helvetica Bold';
+    color: #a67c52;
+}
+
+/*              contact             */
+
+.contact {
+    background-color: #f1eeed;
+    margin: 0 auto;
+    padding: 5em 0;
+}
+
+.contact-container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.infos {
+    width: 50%;
+    margin: 1em auto 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.infos p {
+    position: relative;
+    font-size: 1.3em;
+}
+
+.number p::before {
+    content: url(./images/mobile-icon.png);
+    position: absolute;
+    top: -.4em;
+    left: -2.3em;
+}
+
+.email p::before {
+    content: url(./images/email-icon.png);
+    position: absolute;
+    top: -.4em;
+    left: -2.3em;
+}
+
+.fl-button a img {
+    padding: 1em 2em;
+    border-radius: 1em;
+    background-color: #a67c52;
+}
+
+/*              footer              */
+
+footer div {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1em 0;
+    display: flex;
+}
+
+footer div p {
+    flex-basis: 50%;
+    font-size: 1em;
+}
+
+footer div p:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer div a {
+    text-decoration: none;
+    color: #a67c52;
+}

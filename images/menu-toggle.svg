@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+	<defs>
+		<style>
+			.cls-1{fill:none;stroke:#a67c52;stroke-linecap:round;stroke-miterlimit:10;stroke-width:5px;}
+		</style>
+	</defs>
+	<title>
+		menu-toggle
+	</title>
+	<g id="lower-stroke">
+		<line class="cls-1" x1="8" y1="36.5" x2="42" y2="36.5" />
+	</g>
+	<g id="middle-stroke">
+		<line class="cls-1" x1="8" y1="25" x2="23" y2="25" />
+	</g>
+	<g id="upper-stroke">
+		<line class="cls-1" x1="8" y1="13.5" x2="42" y2="13.5" />
+	</g>
+</svg>
